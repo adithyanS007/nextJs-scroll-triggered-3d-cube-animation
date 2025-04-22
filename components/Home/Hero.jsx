@@ -44,8 +44,6 @@ const Hero = () => {
     face.appendChild(img);
     imageCounter++;
 
-    // Reset to 1 after reaching the 6th image (because you have 6 cubes)
-    if (imageCounter > 6) imageCounter = 1;
   });
 
   const interpolate = (start, end, progress) => {

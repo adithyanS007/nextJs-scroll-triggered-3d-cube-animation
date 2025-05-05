@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎢 GSAP Scroll Animation with 3D Cubes – Next.js Project
 
-## Getting Started
+This is a visually engaging scroll-triggered animation project using **Next.js**, **GSAP**, **ScrollTrigger**, and **Lenis**. It showcases 3D cubes with smooth scrolling and animated transitions. Perfect for learning scroll-based effects and advanced front-end interactions.
 
-First, run the development server:
+## 🔗 Live Demo  
+[👉 View the project on Vercel](https://your-vercel-deployment.vercel.app)  
+
+---
+
+## ✨ Features
+
+- ⚛️ Built with **Next.js**
+- 🌀 **Lenis** for buttery smooth scrolling
+- 🎞️ Scroll animations powered by **GSAP + ScrollTrigger**
+- 🧊 3D cube transformations with dynamic image faces
+- 🖼️ Parallax-like blur, scale, and opacity effects on text
+- 📱 Fully responsive and performance-optimized
+
+---
+
+## 🚀 Tech Stack
+
+- **Next.js** – React framework for production
+- **GSAP** – Animation engine
+- **ScrollTrigger** – For scroll-based animation control
+- **Lenis** – Smooth scrolling behavior
+- **HTML/CSS/JS** – DOM manipulation via `useRef`
+- **Vercel** – Instant deployment and hosting
+
+---
+📸 Screenshots
+
+![image](https://github.com/user-attachments/assets/5c51aff8-ce53-4c00-8df7-091e333f3287)
+
+![image](https://github.com/user-attachments/assets/da116cfc-e153-4559-83b2-89218e09dd0f)
+
+![image](https://github.com/user-attachments/assets/516e135d-0a39-4b7a-94da-f5fd0baa0ef8)
+
+![image](https://github.com/user-attachments/assets/d270e1b2-760f-4d8a-a949-ca265940ec73)
+
+![image](https://github.com/user-attachments/assets/416c64f7-c10f-42f1-b716-cf1329da72f8)
+
+
+
+
+
+
+## 📂 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+.
+├── components/
+│ └── Hero.jsx
+├── public/
+│ └── assets/
+│ └── img1.jpeg ... imgN.jpeg
+├── pages/
+│ └── index.js
+├── cubeData.js
+├── styles/
+│ └── globals.css
+├── tsconfig.json
+├── README.md
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ How to Run Locally
 
-## Learn More
+1. **Clone the Repository**
+```bash
+git clone https://github.com/your-username/your-repo-name.git
 
-To learn more about Next.js, take a look at the following resources:
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-----
+🧪 How It Works
 
-## Deploy on Vercel
+requestAnimationFrame ensures all animations wait for DOM to be ready.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Cubes are dynamically loaded with images using React useRef.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GSAP ScrollTrigger updates styles on scroll progress, modifying:
+
+cube position, rotation, depth (translate3d)
+
+text blur, scale, and opacity
+
+The Lenis library updates scroll timing via GSAP's internal ticker.
+
+-----
+🙋‍♂️ Author
+Adithyan S
+GitHub: @adithyanS007
+
+📝 License
+This project is licensed under the MIT License. See LICENSE for details.

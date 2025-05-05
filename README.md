@@ -3,8 +3,8 @@
 This is a visually engaging scroll-triggered animation project using **Next.js**, **GSAP**, **ScrollTrigger**, and **Lenis**. It showcases 3D cubes with smooth scrolling and animated transitions. Perfect for learning scroll-based effects and advanced front-end interactions.
 
 ## 🔗 Live Demo  
-[👉 View the Live Project on Vercel]((https://woxro-test.vercel.app/))  
-
+[👉 View the Live Project on Vercel](https://woxro-test.vercel.app/)
+  
 ---
 
 ## ✨ Features
